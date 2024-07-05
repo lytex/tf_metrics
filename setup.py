@@ -19,10 +19,8 @@ with open("README.md", "r") as fh:
 
 
 install_requires = ["numpy"]
-if has_gpu():
-    install_requires.append("tensorflow-gpu==2.9.2")
-else:
-    install_requires.append("tensorflow==2.9.2")
+
+install_requires.append("tensorflow==2.9.2")
 
 
 setup(
